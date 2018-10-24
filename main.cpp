@@ -5,20 +5,17 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
    ofstream of;
    ifstream iff;
    string filename;
    int answer;
  
-   
    cout << "This program has two options:" << endl;
    cout << "1 - Create a data file, or" << endl;
    cout << "2 - Read data from a file and print paychecks." << endl;
    cout << "Please enter (1) to create a file or (2) to print checks:" << endl;
    cin >> answer;
-   //cout << answer << endl;
    
   while(true) {
       if (answer == 1) {
@@ -42,10 +39,7 @@ int main()
             cout << "This program has two options:" << endl;
             cout << "1 - Create a data file, or" << endl;
             cout << "2 - Read data from a file and print paychecks." << endl;
-            cout << "Please enter (1) to create a file or (2) to print checks:";
-            //cout << answer;
-            //cin >> answer;
-            
+            cout << "Please enter (1) to create a file or (2) to print checks:";     
          }
          else 
          cout << "Couldn't open file for input" << endl;
@@ -70,15 +64,6 @@ int main()
          } 
    }
    cout << endl;
-   
-   //string name, string address, string phone, int employeeNumber, double hourlyWage, double hoursWorke
-	//employee object1("Joe Brown", 10, 45 );
-	//employee object2("Sam Jones", 12.50 , 30);
-	//employee object3("Mary Smith", 15, 40);
-	
-
-	//cout<< object1.employee() << endl;
-	//cout<< object2.employee() << endl;
    
 	cin.ignore();
 	cin.get();
